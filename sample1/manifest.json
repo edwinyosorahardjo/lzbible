@@ -1,0 +1,14 @@
+{
+  "short_name": "BZip Bible",
+  "name": "BZip Bible",
+  "icons": [
+    {
+      "src": "../app/spritz/launcher_icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "potrait"
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spritz Bible</title>
+  <meta name="description" content="Speed Reading Bible" />
+
+  <meta name='viewport' content='width=device-width'>
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet' href='style.css'>
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <h1>Spritz Bible</h1>
+  <div>
+    <div class="spritz" id="spritz">
+      <div class="spritz-word" id="spritz_word"></div>
+    </div>
+
+    <div id="app" class="settings">
+      <div class="controls">
+        <select class="js-bibles" v-model="bible" @change="onBibleChange(bible)">
+          <option v-for="bible in bibles" v-bind:value="bible">{{bible.name}}</option>
+        </select>
+      </div>
+      <div class="controls settings-controls">
+        <select class="js-book" v-model="book" @change="onBookChange(book)">
+          <option v-for="book in books" v-bind:value="book">{{book.name}}</option>
+        </select>
+        <select class="js-chapter" v-model="chapter" @change="onChapterChange(chapter)">
+          <option v-for="(value,key) in chapters" :value="key" v-bind:value="key">
+            {{ key+1 }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="controls settings-controls">
+      <span class="speed">
+        <a class="slower entypo-fast-backward" id="spritz_slower" href="#" title="Slow Down"></a>
+        <input class="wpm" id="spritz_wpm" type="number" value="200" step="50" min="50" />
+        <a class="faster entypo-fast-forward" id="spritz_faster" href="#" title="Speed Up"></a>
+      </span>
+      <a class="save entypo-save" id="spritz_save" href="#" title="Save"></a>
+      <span class="interaction">
+        <a class="back entypo-left-open" id="spritz_back" href="#" title="Jog Back"></a>
+        <a class="pause entypo-pause" id="spritz_pause" href="#" title="Pause/Play"></a>
+        <a class="forward entypo-right-open" id="spritz_forward" href="#" title="Jog Forward"></a>
+      </span>
+    </div>
+    <div class="controls extra-controls">
+      <div class="togglable closed">
+        <div class="zoom"><a class="smaller entypo-minus" id="spritz_smaller" href="#" title="Smaller"></a><span
+            class="entypo-search" href="#" title="Smaller"></span><a class="bigger entypo-plus" id="spritz_bigger"
+            href="#" title="Bigger"></a></div>
+        <div class="autosave">
+          <input class="checkbox" id="autosave_checkbox" type="checkbox" />
+          <label class="checkbox-label entypo-cancel" id="spritz_autosave" for="autosave_checkbox">auto-save on
+            pause</label>
+        </div>
+      </div><a class="toggle entypo-dot-3" href="#" title="Extra Controls"></a>
+    </div>
+    <div class="words">
+      <div class="controls words-controls">
+        <a class="light" href="#" title="Change Theme"></a>
+        <a class="refresh entypo-cycle" id="spritz_refresh" href="#" title="Refresh Text"></a><a
+          class="expand entypo-resize-full" id="spritz_expand" href="#" title="Text Area Resize"></a>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar" id="spritz_progress"></div>
+      </div>
+    </div>
+    <div class="alert" id="alert"></div>
+    <div class="blocker">
+      <div>Loading...</div>
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='//lzbible.js.org/js/lzbible.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js'></script>
+
+  <script src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>

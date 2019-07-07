@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleCSVToJson", "BibleCSVToJson.csproj", "{0767386D-7744-43B9-9733-B9A620CA81DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0767386D-7744-43B9-9733-B9A620CA81DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0767386D-7744-43B9-9733-B9A620CA81DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0767386D-7744-43B9-9733-B9A620CA81DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0767386D-7744-43B9-9733-B9A620CA81DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {373277EA-74A2-4055-AA60-5AC29753C086}
+	EndGlobalSection
+EndGlobal
