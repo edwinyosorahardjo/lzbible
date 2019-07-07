@@ -27,7 +27,7 @@ body{
 #spritz_container{
     /* background-color: #ffffff; */
     /* 600px+; small tablet portrait */
-    /* width: 680px; */
+    width: 708px;
     margin-left: auto;
     margin-right: auto;
     line-height: 43px;
@@ -114,7 +114,7 @@ body{
     }
 
     #spritz_container{
-        /* width: 340px; */
+        width: 350px;
         /* margin-left: auto; */
         /* margin-right: auto; */
         line-height: 22px;
