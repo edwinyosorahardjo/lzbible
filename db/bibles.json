@@ -1,0 +1,422 @@
+[
+    {
+        "name": "Indonesian (Terjemahan Baru)",
+        "dbpath": "indonesian_baru",
+        "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+        "source": "http://bibledatabase.org",
+        "books": "indonesian"
+    },
+    {
+        "name": "Indonesian (Bahasa Indonesia Sehari-hari)",
+        "dbpath": "indonesian_bahasa",
+        "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+        "source": "http://bibledatabase.org",
+        "books": "indonesian"
+    },
+    {
+        "name": "Indonesian (Terjemahan Lama)",
+        "dbpath": "indonesian_lama",
+        "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+        "source": "http://bibledatabase.org",
+        "books": "indonesian"
+    },
+    {
+        "name": "Darby English Bible",
+        "dbpath": "darby",
+        "copyright": "Darby's Holy Scriptures, A New Translation from the Original Languages was published originally in two parts: the New Testament (1884) and the New Testament (1890). These are English translations of a collation done on his earlier German and French translations. Both are posthumous, as John Nelson Darby himself died in 1882. This current e-text reflects the even more recent Guildford/London edition of 1961. For more information click here.",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "World English Bible",
+        "dbpath": "web",
+        "copyright": "The WEB Bible as it might appear by the name is being translated specifically for the purpose of being distributed over the WEB. In the words of those working on the translation from the ASV 1901, \"...there is NO OTHER complete translation of the Holy Bible in normal Modern English that can be freely copied (except for some limited \"fair use\") without payment of royalties. This is the vacuum that the World English Bible is trying to fill.\" ",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Greek New Testament",
+        "dbpath": "gk",
+        "copyright": "PUBLIC DOMAIN GREEK NEW TESTAMENT",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Greek NT (Stephanos-1550) ",
+        "dbpath": "greeknt_1550",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Greek NT (Scrivener-1894)",
+        "dbpath": "greeknt_1894",
+        "copyright": "Scrivener's 1894 edition, an attempt to reconstruct the Greek Vorlage for the KJV NT, insofar as this can be found in Greek MSS, without retranslating Vulgate readings back into unattested Greek.",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Hebrew Transliteration",
+        "dbpath": "hebrew_translit",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Jewish Publication Society 1917 OT",
+        "dbpath": "jps",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "King James Version",
+        "dbpath": "kjv",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Korean Bible",
+        "dbpath": "korean",
+        "copyright": "Korean Bible",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Modern Greek",
+        "dbpath": "modern_greek",
+        "copyright": "Modern Greek Bible ",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Greek OT (Septuagint/LXX)",
+        "dbpath": "septuagint",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "KJV Thai Bible",
+        "dbpath": "thai",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "thai"
+    },
+    {
+        "name": "Vietnamese Bible",
+        "dbpath": "vietnamese",
+        "copyright": "Vietnamese Bible",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Latin Vulgate",
+        "dbpath": "vul",
+        "copyright": "Latin Vulgate",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Westcott-Hort New Testament",
+        "dbpath": "wh",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Youngs Literal Translation",
+        "dbpath": "ylt",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Wycliffe New Testament",
+        "dbpath": "wycliffe_nt",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Afrikaans",
+        "dbpath": "afrikaans",
+        "copyright": "This copyright Bible has kindly been made available by the Bible Society of South Africa, strictly for non-commercial use with BibleDatabase software. (Permission to use for non-commercial use granted on Tuesday, April 15, 2003 by Dr. Eric Hermanson )",
+        "source": "http://bibledatabase.org",
+        "books": "afrikaans"
+    },
+    {
+        "name": "Albanian Bible",
+        "dbpath": "albanian",
+        "copyright": "Albanian Bible",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "American Standard-ASV1901",
+        "dbpath": "asv1901",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "King James Version #2",
+        "dbpath": "av",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Bible in Basic English",
+        "dbpath": "bbe",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Bulgarian Bible",
+        "dbpath": "bulgarian",
+        "copyright": "Bulgarian Bible - (bibliata.com text version dated June 10, 2005 - used by permission)",
+        "source": "http://bibledatabase.org",
+        "books": "bulgarian"
+    },
+    {
+        "name": "Cebuano Bible",
+        "dbpath": "cebuano",
+        "copyright": "Cebuano Bible",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Chinese Union Version (Big5)",
+        "dbpath": "chinese_union_b5",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "chinese"
+    },
+    {
+        "name": "Croatian Bible",
+        "dbpath": "croatian",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Danish Bible",
+        "dbpath": "dansk33",
+        "copyright": "Denne elektroniske udgave af bibelen kommer fra den danske 1933 udgave. Det Gamle Testamente er en overs ttelse fra 1931 og Det Nye Testamente er en overs ttelse fra 1907.",
+        "source": "http://bibledatabase.org",
+        "books": "danish"
+    },
+    {
+        "name": "Norwegian (Bibelselskapets utgave 1930)",
+        "dbpath": "dnb30",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Douay-Rehims",
+        "dbpath": "douay_rheims",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Hollands Statenvertaling",
+        "dbpath": "dutch",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Finnish 1938",
+        "dbpath": "finnish1938",
+        "copyright": "Finnish Bible of 1938",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "French Darby",
+        "dbpath": "french_darby",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "french"
+    },
+    {
+        "name": "French - Louis Segond",
+        "dbpath": "french_ls",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "french"
+    },
+    {
+        "name": "Wescott-Hort NT 2",
+        "dbpath": "greeknt_wh",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Haitian Creole",
+        "dbpath": "haitian_creole",
+        "copyright": "Haitian Creole Bible",
+        "source": "http://bibledatabase.org",
+        "books": "haitian-creole"
+    },
+    {
+        "name": "Hungarian Bible",
+        "dbpath": "hungarian",
+        "copyright": "Hungarian Bible",
+        "source": "http://bibledatabase.org",
+        "books": "hungarian"
+    },
+    {
+        "name": "Italian Bible",
+        "dbpath": "italian",
+        "copyright": "Italian Bible",
+        "source": "http://bibledatabase.org",
+        "books": "italian"
+    },
+    {
+        "name": "Latvian New Testament",
+        "dbpath": "latvian_nt",
+        "copyright": "Latvian New Testament",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "German Luther",
+        "dbpath": "luther",
+        "copyright": "German Luther Bible",
+        "source": "http://bibledatabase.org",
+        "books": "german"
+    },
+    {
+        "name": "Manx Gaelic (Portions)",
+        "dbpath": "manx_gaelic",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Maori",
+        "dbpath": "maori",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Portuguese Bible",
+        "dbpath": "portuguese",
+        "copyright": "Jo o Ferreira de Almeida Atualizada",
+        "source": "http://bibledatabase.org",
+        "books": "portuguese"
+    },
+    {
+        "name": "Rumanian Bible",
+        "dbpath": "rumanian",
+        "copyright": "Cornilescu Version",
+        "source": "http://bibledatabase.org",
+        "books": "romanian"
+    },
+    {
+        "name": "Espa ol Reina Valera 1909",
+        "dbpath": "rv1909",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Gaelic Gospel of Mark",
+        "dbpath": "scots_gaelic",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Shuar New Testament",
+        "dbpath": "shuar_nt",
+        "copyright": "Shuar New Testament",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Espa ol Reina Valera",
+        "dbpath": "spanish",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "spanish"
+    },
+    {
+        "name": "Espa ol - (Spanish Modern)",
+        "dbpath": "spanish_mod",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "spanish"
+    },
+    {
+        "name": "Espa ol Sagradas Escrituras",
+        "dbpath": "spanish_sev",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "spanish"
+    },
+    {
+        "name": "Swedish Bible",
+        "dbpath": "sv17",
+        "copyright": "Swedish Bible",
+        "source": "http://bibledatabase.org",
+        "books": "swedish"
+    },
+    {
+        "name": "Swahili New Testament",
+        "dbpath": "swahili_nt",
+        "copyright": "Swahili New Testament",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Ukrainian Bible",
+        "dbpath": "ukrainian",
+        "copyright": "Ukrainian Bible ",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Uma New Testament",
+        "dbpath": "uma_nt",
+        "copyright": "Uma New Testament",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Webster's Bible",
+        "dbpath": "webster",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Weymouth New Testament",
+        "dbpath": "weymouth_nt",
+        "copyright": "Weymouth New Testament in Modern Speech. Keying for use in the Online Bible produced these files. Earl Melton performed proofreading. The printed edition used in creating this e-text was the Kregal (ISBN 0-8254-4025-4) reprint of the Ernest Hampden-Cook (1912) Third Edition, of the edition first published in 1909 by J. Clarke, London. For Full Description Click here.  ",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Serbian Bible",
+        "dbpath": "serbian",
+        "copyright": "",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    },
+    {
+        "name": "Hebrew Bible in English",
+        "dbpath": "hebrew_ot_h_",
+        "copyright": "The Holy Scriptures (Old Testament)\r\nBy the Jewish Publication Society.\r\nAll rights reserved.\r\n\r\nCopyright (c) Larry Nelson, 1995-98, P.O. Box 2083, Rialto, California,\r\nAll rights reserved. Used by permission.",
+        "source": "http://bibledatabase.org",
+        "books": "english"
+    }
+]
