@@ -3,29 +3,19 @@ body{
 }
 
 #spritz_holder{
-
-box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-
-background-color: #ffffff;
-
-position: fixed;
-
-top: 0;
-
-left: 0;
-
-z-index: 99999999999999999;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+background-color: #333;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99999999999999999;
     /* 600px+; small tablet portrait */
-
-width: 100%;
-
-padding-top: 12px;
-
-padding-bottom: 12px;
-
-margin-bottom: 12px;
-
-min-height: 166px;
+width: 100%;
+padding-top: 12%;
+padding-bottom: 12px;
+margin-bottom: 12px;
+min-height: 100%;
+opacity: 0.97;
 }
 
 #spritz_spacer{
@@ -35,12 +25,14 @@ min-height: 166px;
 }
 
 #spritz_container{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* 600px+; small tablet portrait */
-    width: 680px;
+    /* width: 680px; */
     margin-left: auto;
     margin-right: auto;
     line-height: 43px;
+    min-height: 350px;
+    /* opacity: 2; */
 }
 
 #spritz_result{
@@ -51,6 +43,7 @@ min-height: 166px;
     padding-bottom: 9px;
     min-height: 40px;
     /* font-size: 122px !important; */
+    /* color: white; */
 }
 
 #guide_top, #guide_bottom{
@@ -89,13 +82,14 @@ min-height: 166px;
 }
 
 .invisible{
+    opacity: 0;
     font-family: sans-serif;
     color: #ffffff;
     position: static;
 }
 
 .start, .pivot, .end, .spritz_start, .spritz_pivot, .spritz_end{
-    color: #333333;
+    color: #EEE;
     text-align: center;
     font-family: sans-serif;
     /* 600px+; small tablet portrait */
@@ -112,7 +106,7 @@ min-height: 166px;
         padding-top: 4px;
         padding-bottom: 6px;
         margin-bottom: 6px;
-        min-height: 70px;
+        /* min-height: 70px; */
     }
 
     #spritz_spacer{
@@ -120,9 +114,9 @@ min-height: 166px;
     }
 
     #spritz_container{
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
+        /* width: 340px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         line-height: 22px;
     }
 
@@ -148,7 +142,14 @@ min-height: 166px;
     }
 
     .start, .pivot, .end, .spritz_start, .spritz_pivot, .spritz_end{
-        font-size: 29px;
+        font-size: 32px;
     }
 
+}
+
+@media (min-height: 500px) {
+    #spritz_holder{
+        padding-top: 30%;
+    }
+        
 }

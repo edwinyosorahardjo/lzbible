@@ -79,6 +79,7 @@ function close_spritz(){
         stopSpritz();
     }
     hide_spritz();
+    $("#sprintread").text('Read');
 }
 
 // Entry point to the beef.
@@ -208,6 +209,7 @@ function stopSpritz() {
     }
 
     document.getElementById("spritz_toggle").textContent = "Play";
+    $("#sprintread").text('Read');
     running = false;
 }
 
@@ -365,8 +367,8 @@ function sprint_read(){
             $("#sprintread").text('Stop');  
             spritzify(model.passages.join(' '));
           });
-    } else{
-        $("#sprintread").text('Read');
+    }
+    else{
         close_spritz();
     }
   }
