@@ -1,0 +1,38 @@
+  [
+    {
+      "iso": "id",
+      "abbr": "tb",
+      "format": "json-lzw",
+      "name": "Indonesian (Terjemahan Baru)",
+      "dbpath": "itb",
+      "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+      "source": "http://bibledatabase.org/bibles_indo.html"
+    }
+    ,{
+      "iso": "id",
+      "abbr": "tl",
+      "format": "json-lzw",
+      "name": "Indonesian (Terjemahan Lama)",
+      "dbpath": "itl",
+      "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+      "source": "http://bibledatabase.org/bibles_indo.html"
+    }
+    ,{
+      "iso": "id",
+      "abbr": "bis",
+      "format": "json-lzw",
+      "name": "Indonesian Bahasa Sehari Hari",
+      "dbpath": "bis",
+      "copyright": "Copyright (C) Lembaga Alkitab Indonesia (Indonesian Bible Society), 1994.",
+      "source": "http://bibledatabase.org/bibles_indo.html"
+    }
+    ,{
+      "iso": "en",
+      "abbr": "kjv",
+      "format": "json-lzw",
+      "name": "King James Version",
+      "dbpath": "kjv",
+      "copyright": "Crown Copyright in UK",
+      "source": "http://bibledatabase.org/bibles_indo.html"
+    }
+  ]
