@@ -198,6 +198,7 @@ namespace BibleCSVToJson
                     codePage = 874;
                     break;
                 case "b_bulgarian":
+                case "b_ukrainian":
                     codePage = 1251;
                     break;
                 case "b_hebrew_ot_h_":
