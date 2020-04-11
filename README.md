@@ -33,7 +33,9 @@ The program is written to extract bibledatabase.org csv bibles stored as submodu
 * Add books_language.txt following the same format
 * Run the program which will generate the files
 * Test the sample app that the bibles are loading
-* Create separate pull request in bibledatabasecsv and in LzBible
+* Create separate pull request in bibledatabasecsv and in LzBible  
+  Check the readme inside the tools  
+
 
 Examples
 --------
@@ -72,7 +74,9 @@ var verses = await LzBible.GetPassages(1, 1); // genesis, ch 1
 
 TODO
 ----
+
  * convert more bibles and update copyrights
  * more test cases
  * better documentation
  * Book index translation
+ * improve reporisoty speed, as files start accumulating?
