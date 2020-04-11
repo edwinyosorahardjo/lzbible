@@ -1,3 +1,0 @@
-[submodule "tools/biblecsv.to.json/submodules/bibledatabasecsv"]
-	path = tools/biblecsv.to.json/submodules/bibledatabasecsv
-	url = https://github.com/edwinyosorahardjo/bibledatabasecsv
