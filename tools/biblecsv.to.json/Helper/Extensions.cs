@@ -22,5 +22,11 @@ namespace BibleCSVToJson.Helper
                 NullValueHandling = NullValueHandling.Ignore
             });
         }
-}
+
+        public static T FromJson<T>(this string str, Formatting formatting = Formatting.None)
+        {
+            return JsonConvert.DeserializeObject<T>(str);
+        }
+
+    }
 }

@@ -30,12 +30,40 @@ namespace BibleCSVToJson
             //var cleanedText = testText.Sanitize();
             //Console.WriteLine(cleanedText);
             //return;
-            //ExtractBibleCsv();
+            //ExtractBibleCsv("niv_fixed.csv"); //"b_*.txt"
+            //ExtractBibleCsv<BibleRowCsv>("niv_fixed.csv"); //"b_*.txt"
 
-            CreateBiblesList();
+            //CreateBiblesList();
+
+            AddBibleList();
 
             Console.WriteLine("Press Any Key To Exit...");
             Console.ReadLine();
+        }
+
+        private static void AddBibleList()
+        {
+            var outdir = $"../../../../db";
+            Directory.CreateDirectory(outdir);
+            var str = File.ReadAllText($"{outdir}/bibles.json");
+
+            var books = str.FromJson<List<BibleIndexCsv>>();
+            books.Add(new BibleIndexCsv
+            {
+                copyright = "my-bible-study.appspot.com",
+                dbpath = "niv",
+                name = "New International Version (NIV)",
+                defaultIndex = "english"
+
+            });
+            var jsonStr = books.ToJson();
+
+            Console.WriteLine($"Creating Bible Index:");
+            CreateJsonFile(overrideFile: true, targetFile: $"{outdir}/bibles.json", jsonStr: jsonStr);
+            CreateLzwFile(overrideFile: true, targetFile: $"{outdir}/bibles.txt", jsonStr: jsonStr);
+            CreateBZip2File(overrideFile: true, targetFile: $"{outdir}/bibles.bz2", jsonStr: jsonStr);
+
+
         }
 
 
@@ -94,9 +122,9 @@ namespace BibleCSVToJson
         /// <summary>
         /// Find all bibledatabase.org files and extract each files
         /// </summary>
-        private static void ExtractBibleCsv()
+        private static void ExtractBibleCsv<T>(string fileParam = "b_*.txt")
         {
-            var files = Directory.GetFiles("../../submodules/bibledatabasecsv/db", "b_*.txt");
+            var files = Directory.GetFiles("../../submodules/bibledatabasecsv/db", fileParam);
             //Parallel.ForEach(files, file =>
             foreach (var file in files)
             {
@@ -104,7 +132,7 @@ namespace BibleCSVToJson
                 var outdir = $"../../../../db/{dir}";
 
                 Console.WriteLine($"Extract.Bible.Csv: {file} -> {outdir}");
-                ExtractBibleCsvFile(file, outdir);
+                ExtractBibleCsvFile<T>(file, outdir, delimiter: ",", false);
             }
             //);
         }
@@ -290,7 +318,7 @@ namespace BibleCSVToJson
         /// </summary>
         /// <param name="source"></param>
         /// <param name="target"></param>
-        private static void ExtractBibleCsvFile(string source, string target)
+        private static void ExtractBibleCsvFile<T>(string source, string target, string delimiter = "\t", bool ignoreQuote = true, bool hasHeaderRecord = false)
         {
             var fileNameWithNoExt = Path.GetFileNameWithoutExtension(source);
 
@@ -301,9 +329,10 @@ namespace BibleCSVToJson
             // csv reader configuration
             var config = new Configuration()
             {
-                Delimiter = "\t",
-                HasHeaderRecord = false,
-                IgnoreQuotes = true,
+                Delimiter = delimiter,
+                HasHeaderRecord = hasHeaderRecord,
+                IgnoreQuotes = ignoreQuote,
+                BadDataFound = null
             };
 
             // Prepare directories
@@ -316,7 +345,7 @@ namespace BibleCSVToJson
             using (var csv = new CsvReader(reader, config))
             {
                 // get all records
-                var recs = csv.GetRecords<BibleRowCSV>().ToArray();
+                var recs = csv.GetRecords<BibleRowCsv>().ToArray();
 
                 // compress entire records as bz2
                 var allRecs = recs.OrderBy(r => r.Book).ThenBy(r => r.Chapter).ThenBy(r => r.Verse)
@@ -339,7 +368,7 @@ namespace BibleCSVToJson
                         DeleteIfFileExists(targetBzFile);
                     }
                 });
-                
+
                 // Lzw specific extraction - BZip2 is better per book, lzw is better to compress chapter per chapter up 8kb, avg 3-5kb per bible_chapter
                 Parallel.ForEach(recs.GroupBy(b => b.Book).Select(g => g.FirstOrDefault().Book), book =>
                 {
@@ -355,7 +384,7 @@ namespace BibleCSVToJson
                         var targetJsonFile = $"{target}/{book}_{chapter}.json";
                         //var targetBzFile = $"{BZ2_OUT_DIR}/{book}_{chapter}.bz2";
 
-                        if (verses.Any(v=>v.Length>0))
+                        if (verses.Any(v => v.Length > 0))
                         {
                             CreateLzwFile(overrideFile: true, targetFile: targetLzFile, jsonStr: versesJsonStr);
 

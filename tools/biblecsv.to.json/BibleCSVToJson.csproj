@@ -90,7 +90,7 @@
     <Compile Include="Helper\Extensions.cs" />
     <Compile Include="Helper\JSONH.cs" />
     <Compile Include="Models\BibleIndexCsv.cs" />
-    <Compile Include="Models\BibleRowCsv.cs" />
+    <Compile Include="Models\BibleDatabaseCsv.cs" />
     <Compile Include="Models\BookCsv.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Helper\FileHelper.cs" />
