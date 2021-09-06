@@ -31,11 +31,11 @@ namespace BibleCSVToJson
             //Console.WriteLine(cleanedText);
             //return;
             //ExtractBibleCsv("niv_fixed.csv"); //"b_*.txt"
-            //ExtractBibleCsv<BibleRowCsv>("niv_fixed.csv"); //"b_*.txt"
+            ExtractBibleCsv<BibleRowCsv>("niv_fixed.csv"); //"b_*.txt"
 
             //CreateBiblesList();
 
-            AddBibleList();
+            //AddBibleList();
 
             Console.WriteLine("Press Any Key To Exit...");
             Console.ReadLine();
@@ -132,7 +132,12 @@ namespace BibleCSVToJson
                 var outdir = $"../../../../db/{dir}";
 
                 Console.WriteLine($"Extract.Bible.Csv: {file} -> {outdir}");
-                ExtractBibleCsvFile<T>(file, outdir, delimiter: ",", false);
+
+                // bible database
+                ExtractBibleCsvFile<T>(file, outdir);
+                
+                // niv-csv - this creates niv_fixed directory - TODO: rewrite the parser
+                //ExtractBibleCsvFile<T>(file, outdir, delimiter: ",", false, escape: '\\');
             }
             //);
         }
@@ -318,7 +323,7 @@ namespace BibleCSVToJson
         /// </summary>
         /// <param name="source"></param>
         /// <param name="target"></param>
-        private static void ExtractBibleCsvFile<T>(string source, string target, string delimiter = "\t", bool ignoreQuote = true, bool hasHeaderRecord = false)
+        private static void ExtractBibleCsvFile<T>(string source, string target, string delimiter = "\t", bool ignoreQuote = true, bool hasHeaderRecord = false, char escape='"')
         {
             var fileNameWithNoExt = Path.GetFileNameWithoutExtension(source);
 
@@ -333,6 +338,7 @@ namespace BibleCSVToJson
                 HasHeaderRecord = hasHeaderRecord,
                 IgnoreQuotes = ignoreQuote,
                 BadDataFound = null
+                ,Escape = escape
             };
 
             // Prepare directories
